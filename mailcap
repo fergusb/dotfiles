@@ -1,3 +1,7 @@
 text/html; w3m -I %{charset} -T text/html; copiousoutput
+text/html; x-www-browser %s;
 text/html; links2 %s; nametemplate=%s.html
 text/html; links2 -dump %s; nametemplate=%s.html; copiousoutput
+application/pdf; epdfview %s;
+text/calendar; mutt-ical.py -i -e "fergus.bremner@gmail.com" %s
+application/ics; mutt-ical.py -i -e "fergus.bremner@gmail.com" %s
