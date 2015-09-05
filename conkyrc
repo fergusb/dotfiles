@@ -56,15 +56,19 @@ $font${color DimGray}/$alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc
 ${fs_bar /}
 
 ${font Arial:bold:size=10}${color #cccccc}PROCESSES ${color DimGray}${hr 1}
-${color DimGray}$font${top_mem name 1}${alignr}${top mem 1} %
-$font${top_mem name 2}${alignr}${top mem 2} %
-$font${top_mem name 3}${alignr}${top mem 3} %
-$font${top_mem name 4}${alignr}${top mem 4} %
+${color DimGray}$font${top_mem name 1}${alignr}${top mem 1}%
+$font${top_mem name 2}${alignr}${top mem 2}%
+$font${top_mem name 3}${alignr}${top mem 3}%
+$font${top_mem name 4}${alignr}${top mem 4}%
 
 ${font Arial:bold:size=10}${color #cccccc}NETWORK ${color DimGray}${hr 1}
 $font${color DimGray}eth $alignr ${addr eth1}
 wlan $alignr ${addr wlan3}
 
+${font Arial:bold:size=10}${color #cccccc}AUDIO ${color DimGray}${hr 1}
+$font${color DimGray}PCM  ${mixer PCM}% ${mixerbar PCM}
+
 ${font Arial:bold:size=10}${color #cccccc}DATE ${color DimGray}${hr 1}
 ${font}$alignc${time %A, %d %B %Y}
 ${voffset -18}${color DimGray}${font AndroidClock:size=56}$alignc${time %H:%M}
+
