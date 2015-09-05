@@ -1,0 +1,74 @@
+use_xft yes
+xftfont Arial:size=9
+xftalpha 0.1
+update_interval 0.5
+total_run_times 0
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 5
+maximum_width 200
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color DimGray
+default_shade_color black
+default_outline_color DarkGray
+alignment top_right
+gap_x 20
+gap_y 0
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer right
+text_buffer_size 256
+
+TEXT
+
+${font Arial:size=20}${color #cccccc}${nodename}${color DimGray} LINUX
+
+${voffset -110}
+${color DimGray}
+${font}
+${font Arial:bold:size=10}${color #cccccc}SYSTEM ${color DimGray} ${hr 1}
+$font${color DimGray}$sysname $kernel $alignr $machine
+ARM A7 Cortex $alignr${freq_g cpu0}Ghz
+Uptime $alignr${uptime_short}
+
+${font Arial:bold:size=10}${color #cccccc}PROCESSORS ${color DimGray}${hr 1}
+$font${color DimGray}CPU1  ${cpu cpu1}% ${cpubar cpu1}
+CPU2  ${cpu cpu2}% ${cpubar cpu2}
+CPU3  ${cpu cpu3}% ${cpubar cpu3}
+CPU4  ${cpu cpu4}% ${cpubar cpu4}
+
+${font Arial:bold:size=10}${color #cccccc}MEMORY ${color DimGray}${hr 1}
+$font${color DimGray}MEM $alignc ${mem}/${memmax} $alignr ${memperc}%
+${membar}
+Swap$alignc${swap}/ ${swapmax} $alignr ${swapperc}%
+${swapbar}
+
+${font Arial:bold:size=10}${color #cccccc}SSD ${color DimGray}${hr 1}
+$font${color DimGray}/$alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${fs_bar /}
+
+${font Arial:bold:size=10}${color #cccccc}PROCESSES ${color DimGray}${hr 1}
+${color DimGray}$font${top_mem name 1}${alignr}${top mem 1}%
+$font${top_mem name 2}${alignr}${top mem 2}%
+$font${top_mem name 3}${alignr}${top mem 3}%
+$font${top_mem name 4}${alignr}${top mem 4}%
+
+${font Arial:bold:size=10}${color #cccccc}NETWORK ${color DimGray}${hr 1}
+$font${color DimGray}eth $alignr ${addr eth1}
+wlan $alignr ${addr wlan3}
+
+${font Arial:bold:size=10}${color #cccccc}AUDIO ${color DimGray}${hr 1}
+$font${color DimGray}PCM  ${mixer PCM}% ${mixerbar PCM}
+
+${font Arial:bold:size=10}${color #cccccc}DATE ${color DimGray}${hr 1}
+${font}$alignc${time %A, %d %B %Y}
+${voffset -18}${color DimGray}${font AndroidClock:size=56}$alignc${time %H:%M}
+
