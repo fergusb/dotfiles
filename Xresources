@@ -1,12 +1,6 @@
 !xterm fonts
 xterm*font: -*-fixed-*-*-*-*-13-*-*-*-*-*-iso8859-1
-xterm*font1: -*-*-*-*-*-*-2-*-*-*-*-*-*-*
-xterm*font2: -misc-fixed-*-r-normal-*-8-*-*-*-*-*-iso8859-*
-xterm*font3: -b&h-lucidatypewriter-bold-*-*-*-12-*-*-*-*-*-*-*
-xterm*font4: -*-screen-bold-r-normal-*-16-*-*-*-*-*-iso8859-*
-xterm*font5: -*-lucidatypewriter-medium-*-*-*-18-*-*-*-*-*-*-*
-xterm*font6: -*-lucidatypewriter-medium-*-*-*-20-*-*-*-*-*-*-*
-xterm*font7: -dec-terminal-bold-r-normal-*-14-*-*-*-*-*-iso8859-*
+xterm*boldFont: -*-fixed-*-*-*-*-13-*-*-*-*-*-iso8859-1
 Rep: Reputation: Disabled
 	
 !xterm colors - Tango
@@ -34,7 +28,7 @@ xterm*colorBD: rgb:fc/fc/fc
 
 !xterm settings
 xterm*dynamicColors:    true
-xterm*utf8:             2
+xterm*utf8:             1
 xterm*eightBitInput:    true
 xterm*scrollTtyKeypress:true
 xterm*scrollTtyOutput:  false
@@ -53,53 +47,40 @@ xterm*selectToClipboard: true
 xterm*toolBar:          false
 xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
 
-!URxvt settings
-URxvt*termName:         screen-256color
-URxvt*dynamicColors:    true
-URxvt*utf8:             2
-URxvt*eightBitInput:    true
-URxvt*scrollTtyKeypress:true
-URxvt*scrollTtyOutput:  false
-URxvt*scrollBar:        false
-URxvt*loginShell:       true
-URxvt*faceName:         Screen
-URxvt*faceSize:         9
-URxvt*fading:           30
-URxvt*boldMode:         false
-URxvt*colorBDMode:      true
-URxvt*cursorBlink:      true
-URxvt*jumpScroll:       true
-URxvt*multiScroll:      true
-URxvt*saveLines:        1000
-URxvt*multiClickTime:   250 
-URxvt*selectToClipboard: true
-URxvt*toolBar:          false
-URxvt*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
-
 !URxvt fonts
-URxvt*font: xft:Screen:pixelsize=11:antialias=false:hinting:false
+URxvt*font: xft:Screen:pixelsize=12:antialias=false:hinting:false
+URxvt*boldFont: xft:Screen:pixelsize=12:antialias=false:hinting:false
 
 !URxvt colors - Tango
-URxvt*foreground:  #FFFFFF
-URxvt*background:  #000000
+URxvt.foreground: #FFFFFF
+URxvt.background: #000000
 
-URxvt*cursorUnderline: false
-URxvt*colorUL:        yellow
-URxvt*underlineColor: yellow
+URxvt.color0:     #2E3436
+URxvt.color1:     #CC0000
+URxvt.color2:     #4E9A06
+URxvt.color3:     #C4A000
+URxvt.color4:     #3465A4
+URxvt.color5:     #75507B
+URxvt.color6:     #06989A
+URxvt.color7:     #D3D7CF
+URxvt.color8:     #555753
+URxvt.color9:     #EF2929
+URxvt.color10:    #8AE234
+URxvt.color11:    #FCE94F
+URxvt.color12:    #729FCF
+URxvt.color13:    #AD7FA8
+URxvt.color14:    #34E2E2
+URxvt.color15:    #EEEEEC
 
-URxvt*color0:  rgba:1b1b/0808/0202/CCCC
-URxvt*color1:  rgb:cccc/0000/0000
-URxvt*color2:  rgb:4e4e/9a9a/0606
-URxvt*color3:  rgb:c4c4/a0a0/0000
-URxvt*color4:  rgb:3434/6565/a4a4
-URxvt*color5:  rgb:7575/5050/7b7b
-URxvt*color6:  rgb:0606/9820/9a9a
-URxvt*color7:  rgb:d3d3/d7d7/cfcf
-URxvt*color8:  rgb:5555/5757/5353
-URxvt*color9:  rgb:efef/2929/2929
-URxvt*color10: rgb:8a8a/e2e2/3434
-URxvt*color11: rgb:fcfc/e9e9/4f4f
-URxvt*color12: rgb:7272/9f9f/cfcf
-URxvt*color13: rgb:adad/7f7f/a8a8
-URxvt*color14: rgb:3434/e2e2/e2e2
-URxvt*color15: rgb:eeee/eeee/ecec
+!URxvt settings
+URxvt*termName:         urxvt-256color
+URxvt*loginShell:       true
+URxvt*utf8:             1
+URxvt*scrollBar:        false
+URxvt*colorBDMode:      true
+URxvt*cursorBlink:      true
+URxvt*saveLines:        1000
+URxvt*selectToClipboard: true
+URxvt*toolBar:          false
+urxvt*internalBorder:   0
+urxvt*externalBorder:   0
