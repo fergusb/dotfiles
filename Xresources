@@ -1,6 +1,6 @@
 !xterm fonts
-xterm*font: -*-fixed-*-*-*-*-13-*-*-*-*-*-iso8859-1
-xterm*boldFont: -*-fixed-*-*-*-*-13-*-*-*-*-*-iso8859-1
+xterm*font: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
+xterm*boldFont: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
 Rep: Reputation: Disabled
 	
 !xterm colors - Tango
@@ -48,29 +48,47 @@ xterm*toolBar:          false
 xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
 
 !URxvt fonts
+! URxvt*font: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
+! URxvt*boldFont: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
 URxvt*font: xft:Screen:pixelsize=12:antialias=false:hinting:false
 URxvt*boldFont: xft:Screen:pixelsize=12:antialias=false:hinting:false
+! URxvt.font: 9x13
+! URxvt.boldFont: 9x13
 
 !URxvt colors - Tango
-URxvt.foreground: #FFFFFF
-URxvt.background: #000000
+URxvt*foreground: #FFFFFF
+URxvt*background: #000000
 
-URxvt.color0:     #2E3436
-URxvt.color1:     #CC0000
-URxvt.color2:     #4E9A06
-URxvt.color3:     #C4A000
-URxvt.color4:     #3465A4
-URxvt.color5:     #75507B
-URxvt.color6:     #06989A
-URxvt.color7:     #D3D7CF
-URxvt.color8:     #555753
-URxvt.color9:     #EF2929
-URxvt.color10:    #8AE234
-URxvt.color11:    #FCE94F
-URxvt.color12:    #729FCF
-URxvt.color13:    #AD7FA8
-URxvt.color14:    #34E2E2
-URxvt.color15:    #EEEEEC
+URxvt*color0:     #2E3436
+URxvt*color1:     #CC0000
+URxvt*color2:     #4E9A06
+URxvt*color3:     #C4A000
+URxvt*color4:     #3465A4
+URxvt*color5:     #75507B
+URxvt*color6:     #06989A
+URxvt*color7:     #D3D7CF
+URxvt*color8:     #555753
+URxvt*color9:     #EF2929
+URxvt*color10:    #8AE234
+URxvt*color11:    #FCE94F
+URxvt*color12:    #729FCF
+URxvt*color13:    #AD7FA8
+URxvt*color14:    #34E2E2
+URxvt*color15:    #EEEEEC
+! URxvt*colorBD:                        color
+! URxvt*colorIT:                        color
+URxvt*colorUL:    #FFFFFF
+! URxvt*colorRV:                        color
+! URxvt*underlineColor:                 color
+! URxvt*scrollColor:                    color
+! URxvt*troughColor:                    color
+! URxvt*highlightColor:                 color
+! URxvt*highlightTextColor:             color
+! URxvt*cursorColor:                    color
+! URxvt*cursorColor2:                   color
+! URxvt*pointerColor:                   color
+! URxvt*pointerColor2:                  color
+! URxvt*borderColor:                    color
 
 !URxvt settings
 URxvt*termName:         urxvt-256color
@@ -84,3 +102,19 @@ URxvt*selectToClipboard: true
 URxvt*toolBar:          false
 urxvt*internalBorder:   0
 urxvt*externalBorder:   0
+
+!URxvt url handling
+! URxvt.perl-ext: default,url-select
+! URxvt.keysym.M-u: perl:url-select:select_next
+! URxvt.url-select.launcher: /usr/bin/xdg-open
+! URxvt.url-select.underline: true
+
+!URxvt tabs
+! URxvt.perl-ext-common: ...,tabbed,...
+! URxvt*tabbar-fg: 2
+! URxvt*tabbar-bg: 0
+! URxvt*tab-fg: 3
+! URxvt*tab-bg: 0
+! URxvt*new-button: false
+! URxvt*autohide: true
+! URxvt*reopen-on-close: yes
