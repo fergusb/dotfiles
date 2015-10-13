@@ -91,7 +91,7 @@ URxvt*colorUL:    #FFFFFF
 ! URxvt*borderColor:                    color
 
 !URxvt settings
-URxvt*termName:         urxvt-256color
+URxvt*termName:         screen-256color
 URxvt*loginShell:       true
 URxvt*utf8:             1
 URxvt*scrollBar:        false
