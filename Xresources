@@ -97,6 +97,10 @@ URxvt*termName:              screen-256color
 URxvt*loginShell:            true
 URxvt*utf8:                  1
 URxvt*scrollBar:             false
+URxvt*scrollstyle:           rxvt
+! URxvt*scrollTtyOutput:       false
+! URxvt*scrollWithBuffer:      true
+! URxvt*scrollTtyKeypress:     true
 URxvt*colorBDMode:           true
 URxvt*cursorBlink:           true
 URxvt*saveLines:             1000
