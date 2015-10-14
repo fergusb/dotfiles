@@ -68,6 +68,9 @@ ${font Arial:bold:size=10}${color #cccccc}AUDIO ${color DimGray}${hr 1}
 $font${color DimGray}Master${alignr}${mixer Master}%
 ${mixerbar Master}
 
+${font Arial:bold:size=10}${color #cccccc}AUDIO ${color DimGray}${hr 1}
+$font${color DimGray}PCM  ${mixer PCM}% ${mixerbar PCM}
+
 ${font Arial:bold:size=10}${color #cccccc}DATE ${color DimGray}${hr 1}
 ${font}$alignc${time %A, %d %B %Y}
 ${voffset -18}${color DimGray}${font AndroidClock:size=56}$alignc${time %H:%M}

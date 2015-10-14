@@ -3,7 +3,7 @@
 CWD=$(pwd) 
 DATE=$(date +"%Y%m%d%H%M")
 backup=dotfiles-$DATE
-dotfiles="abcde.conf gitattributes gitconfig gitignore goobookrc hgignore_global hgrc screenrc tidy.conf tmux.conf gmrunrc rsync-ignore.txt"
+dotfiles="gitattributes gitconfig gitignore hgignore_global hgrc tmux.conf rsync-ignore.txt Xresources"
 configs="newsbeuter ncmpcpp"
 
 # create backup dir in home dir
@@ -61,9 +61,9 @@ mkdir -p $HOME/Documents/Feeds
 mkdir -p $HOME/.git/templates
 
 # goobook cache
-mkdir -p $HOME/.goobook
-chmod 0700 $HOME/.goobook
-touch $HOME/.goobook/cache
+# mkdir -p $HOME/.goobook
+# chmod 0700 $HOME/.goobook
+# touch $HOME/.goobook/cache
 
 # cleanup
 if [ "$(ls -A $HOME/$backup)" ]; then
