@@ -1,18 +1,14 @@
-# XCode...
-*.pbxproj binary
-
-# General text files
-*CHANGELOG export-ignore
+# general text files
 *COPYRIGHT export-ignore
 *INSTALL export-ignore
 *LICENSE export-ignore
-*README export-ignore
-*README.md export-ignore
-*README.txt export-ignore
 *TODO export-ignore
 *TODO.txt export-ignore
 
-# Media files 
+# fonts
+app/static/chrome/fonts/* export-ignore
+
+# media files 
 *.gif binary
 *.jpg binary
 *.m4v binary
