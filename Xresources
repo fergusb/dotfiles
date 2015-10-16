@@ -1,6 +1,7 @@
 ! Edit, then: xrdb -merge ~/.Xresources
 
 !xterm fonts
+! xterm*font: -xos4-terminus-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
 xterm*font: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
 xterm*boldFont: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
 Rep: Reputation: Disabled
@@ -111,14 +112,23 @@ URxvt*letterSpace:           0
 urxvt*internalBorder:        0
 urxvt*externalBorder:        0
 
-!URxvt url handling
-! URxvt.perl-ext: default,url-select
-! URxvt.keysym.M-u: perl:url-select:select_next
+!URxvt extension / plugins
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
+
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.autocopy:true
 ! URxvt.url-select.launcher: /usr/bin/xdg-open
-! URxvt.url-select.underline: true
+URxvt.url-select.underline:true
 
 !URxvt tabs
-! URxvt.perl-ext-common: ...,tabbed,...
+! URxvt.perl-ext-common: tabbed
 ! URxvt*tabbar-fg: 2
 ! URxvt*tabbar-bg: 0
 ! URxvt*tab-fg: 3
