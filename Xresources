@@ -36,7 +36,7 @@ xterm*eightBitInput:    true
 xterm*scrollTtyKeypress:true
 xterm*scrollTtyOutput:  false
 xterm*scrollBar:        false
-xterm*loginShell:       true
+xterm*loginShell:       false
 xterm*faceName:         Screen
 xterm*faceSize:         9
 xterm*boldMode:         false
