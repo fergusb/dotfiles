@@ -50,13 +50,17 @@ xterm*selectToClipboard: true
 xterm*toolBar:          false
 xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
 
-!URxvt fonts
-! URxvt*font: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
-! URxvt*boldFont: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.rgba:       rgb
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting:    1
+Xft.antialias:  1
+
 URxvt*font: xft:Screen:pixelsize=12:antialias=false:hinting:false
 URxvt*boldFont: xft:Screen:pixelsize=12:antialias=false:hinting:false
-! URxvt.font: 9x13
-! URxvt.boldFont: 9x13
 
 !URxvt colors - Tango
 URxvt*foreground:           #FFFFFF
