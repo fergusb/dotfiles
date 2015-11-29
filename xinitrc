@@ -19,8 +19,9 @@ xrdb -merge ~/.Xresources
 # run local xhost
 xhost local:root
 
-# start ssh-agent
+# start ssh-agent & gpg-agent
 eval $(ssh-agent)
+eval $(gpg-agent --daemon)
 
 # start i3wm
 exec i3 -V >> ~/.i3/logfile 2>&1
