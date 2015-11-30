@@ -1,6 +1,6 @@
 ! Edit, then: xrdb -merge ~/.Xresources
 
-!-- Xft settings -- !
+! xft -------------------------------------------------------------------------
 Xft.dpi:        96
 Xft.rgba:       rgb
 Xft.autohint:   0
@@ -9,10 +9,33 @@ Xft.hintstyle:  hintslight
 Xft.hinting:    1
 Xft.antialias:  1
 
+! xterm -----------------------------------------------------------------------
+xterm*dynamicColors:    true
+xterm*utf8:             1
+xterm*eightBitInput:    true
+xterm*scrollTtyKeypress:true
+xterm*scrollTtyOutput:  false
+xterm*scrollBar:        false
+xterm*loginShell:       false
+xterm*faceName:         Screen
+xterm*faceSize:         9
+xterm*boldMode:         false
+xterm*colorBDMode:      true
+xterm*cursorBlink:      true
+xterm*jumpScroll:       true
+xterm*multiScroll:      true
+xterm*saveLines:        1000
+xterm*multiClickTime:   250 
+xterm*selectToClipboard: true
+xterm*toolBar:          false
+xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
+
+! urxvt -----------------------------------------------------------------------
 URxvt*font: xft:Screen:pixelsize=12:antialias=false:hinting:false
 URxvt*boldFont: xft:Screen:pixelsize=12:antialias=false:hinting:false
+URxvt*italicFont: xft:Screen:pixelsize=12:antialias=false:hinting=false:slant=100
 
-!URxvt colors - Tango
+! urxvt colors: Tango
 URxvt*foreground:           #FFFFFF
 URxvt*background:           #000000
 
@@ -47,7 +70,7 @@ URxvt*colorUL:              #FFFFFF
 ! URxvt*pointerColor2:       color
 ! URxvt*borderColor:         color
 
-!URxvt settings
+! urxvt settings
 URxvt*termName:              xterm-256color
 URxvt*loginShell:            false
 URxvt*utf8:                  1
@@ -66,7 +89,7 @@ URxvt*letterSpace:           0
 urxvt*internalBorder:        0
 urxvt*externalBorder:        0
 
-!URxvt extension / plugins
+! extension / plugins
 URxvt.perl-ext-common: default,clipboard,matcher,keyboard-select
 
 URxvt.url-launcher:         sensible-browser
