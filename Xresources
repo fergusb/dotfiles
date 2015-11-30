@@ -1,55 +1,5 @@
 ! Edit, then: xrdb -merge ~/.Xresources
 
-!xterm fonts
-! xterm*font: -xos4-terminus-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
-xterm*font: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
-xterm*boldFont: -misc-fixed-*-*-normal-*-13-*-*-*-*-*-iso8859-1
-Rep: Reputation: Disabled
-  
-!xterm colors - Tango
-xterm*foreground:       #FFFFFF
-xterm*background:       #000000
-xterm*cursorColor:      silver
-
-xterm*color0:           rgb:2e2e/3434/3636
-xterm*color1:           rgb:cccc/0000/0000
-xterm*color2:           rgb:4e4e/9a9a/0606
-xterm*color3:           rgb:c4c4/a0a0/0000
-xterm*color4:           rgb:3434/6565/a4a4
-xterm*color5:           rgb:7575/5050/7b7b
-xterm*color6:           rgb:0606/9820/9a9a
-xterm*color7:           rgb:d3d3/d7d7/cfcf
-xterm*color8:           rgb:5555/5757/5353
-xterm*color9:           rgb:efef/2929/2929
-xterm*color10:          rgb:8a8a/e2e2/3434
-xterm*color11:          rgb:fcfc/e9e9/4f4f
-xterm*color12:          rgb:7272/9f9f/cfcf
-xterm*color13:          rgb:adad/7f7f/a8a8
-xterm*color14:          rgb:3434/e2e2/e2e2
-xterm*color15:          rgb:eeee/eeee/ecec
-xterm*colorBD:          rgb:fc/fc/fc
-
-!xterm settings
-xterm*dynamicColors:    true
-xterm*utf8:             1
-xterm*eightBitInput:    true
-xterm*scrollTtyKeypress:true
-xterm*scrollTtyOutput:  false
-xterm*scrollBar:        false
-xterm*loginShell:       false
-xterm*faceName:         Screen
-xterm*faceSize:         9
-xterm*boldMode:         false
-xterm*colorBDMode:      true
-xterm*cursorBlink:      true
-xterm*jumpScroll:       true
-xterm*multiScroll:      true
-xterm*saveLines:        1000
-xterm*multiClickTime:   250 
-xterm*selectToClipboard: true
-xterm*toolBar:          false
-xterm*charClass:        33:48,35-38:48,39:43,42-47:48,58-59:48,61:48,63-64:48,126:48
-
 !-- Xft settings -- !
 Xft.dpi:        96
 Xft.rgba:       rgb
