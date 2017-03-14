@@ -36,14 +36,12 @@ ${color DimGray}
 ${font}
 ${font Arial:bold:size=10}${color #cccccc}SYSTEM ${color DimGray} ${hr 1}
 $font${color DimGray}$sysname $kernel $alignr $machine
-Intel Atom $alignr${freq_g cpu0}Ghz
+Intel Celeron $alignr${freq_g cpu0}Ghz
 Uptime $alignr${uptime_short}
 
 ${font Arial:bold:size=10}${color #cccccc}PROCESSORS ${color DimGray}${hr 1}
 $font${color DimGray}CPU1  ${cpu cpu1}% ${cpubar cpu1}
 CPU2  ${cpu cpu2}% ${cpubar cpu2}
-CPU3  ${cpu cpu3}% ${cpubar cpu3}
-CPU4  ${cpu cpu4}% ${cpubar cpu4}
 
 ${font Arial:bold:size=10}${color #cccccc}MEMORY ${color DimGray}${hr 1}
 $font${color DimGray}MEM $alignc ${mem}/${memmax} $alignr ${memperc}%
@@ -62,14 +60,7 @@ $font${top_mem name 3}${alignr}${top mem 3}%
 $font${top_mem name 4}${alignr}${top mem 4}%
 
 ${font Arial:bold:size=10}${color #cccccc}NETWORK ${color DimGray}${hr 1}
-$font${color DimGray}eth0 $alignr ${addr eth0}
-
-${font Arial:bold:size=10}${color #cccccc}AUDIO ${color DimGray}${hr 1}
-$font${color DimGray}Master${alignr}${mixer Master}%
-${mixerbar Master}
-
-${font Arial:bold:size=10}${color #cccccc}AUDIO ${color DimGray}${hr 1}
-$font${color DimGray}PCM  ${mixer PCM}% ${mixerbar PCM}
+$font${color DimGray}eth0 $alignr ${addr enp2s0}
 
 ${font Arial:bold:size=10}${color #cccccc}DATE ${color DimGray}${hr 1}
 ${font}$alignc${time %A, %d %B %Y}
