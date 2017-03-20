@@ -1,0 +1,17 @@
+/log/
+/logs/
+/images/
+/tmp/
+/vendor/
+*.bak
+*.csv
+*.gemtags*
+*.log
+*.old
+*.pdf
+*.plist
+*.sql
+*.swp
+*.tags*
+*.tmp*
+*.tsv
