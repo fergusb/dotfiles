@@ -3,7 +3,7 @@
 CWD=$(pwd) 
 DATE=$(date +"%Y%m%d%H%M")
 backup=dotfiles-$DATE
-dotfiles="gitattributes gitconfig gitignore hgignore_global hgrc tmux.conf rsync-ignore.txt Xresources"
+dotfiles="gitattributes gitconfig gitignore agignore tmux.conf rsync-ignore.txt"
 configs="newsbeuter ncmpcpp"
 
 # create backup dir in home dir
